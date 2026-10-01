@@ -1,0 +1,59 @@
+{
+  "smartCity": {
+    "parking": {
+      "areaA": {
+        "slots": {
+          "A1": { "status": "available", "updatedAt": 1759300000000 },
+          "A2": { "status": "occupied", "updatedAt": 1759300004000 },
+          "A3": { "status": "available", "updatedAt": 1759300008000 },
+          "A4": { "status": "occupied", "updatedAt": 1759300012000 }
+        },
+        "gate": {
+          "status": "closed",
+          "vehicleDetected": false,
+          "updatedAt": 1759300017000
+        }
+      }
+    },
+    "garbage": {
+      "bins": {
+        "bin01": {
+          "name": "BIN-01",
+          "latitude": 19.033,
+          "longitude": 73.0297,
+          "distanceCm": 8,
+          "fillLevel": 85,
+          "status": "full",
+          "personDetected": false,
+          "lidStatus": "closed",
+          "updatedAt": 1759300022000
+        },
+        "bin02": {
+          "name": "BIN-02",
+          "latitude": 19.035,
+          "longitude": 73.025,
+          "distanceCm": 15,
+          "fillLevel": 60,
+          "status": "warning",
+          "personDetected": true,
+          "lidStatus": "open",
+          "updatedAt": 1759300028000
+        }
+      }
+    },
+    "traffic": {
+      "signals": {
+        "signal1": { "state": "red", "timer": 25, "updatedAt": 1759300034000 },
+        "signal2": { "state": "green", "timer": 18, "updatedAt": 1759300038000 },
+        "signal3": { "state": "yellow", "timer": 10, "updatedAt": 1759300042000 },
+        "signal4": { "state": "red", "timer": 24, "updatedAt": 1759300046000 }
+      },
+      "density": { "value": 72, "status": "heavy" },
+      "emergency": {
+        "detected": true,
+        "rfid": "EMG-001",
+        "priorityMode": true
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f1d1b;
+  background: #f2eee8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 230, 200, 0.6), transparent 28%),
+    radial-gradient(circle at 80% 15%, rgba(227, 211, 255, 0.38), transparent 22%),
+    linear-gradient(180deg, #f4efe8 0%, #efe7df 100%);
+  color: #1f1d1b;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #f3efe7;
+  border-radius: 20px;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #fffaf6;
+  color: #1f1d1b;
+  box-shadow: 0 12px 28px rgba(20, 16, 14, 0.08);
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: #433c39 !important;
+}
+
+.custom-pin {
+  background: transparent;
+  border: none;
+}
+
